@@ -4,8 +4,9 @@ let constraints={
     audio:true,
     video:true
 }
-
+console.log("working fine");
 // navigator -> global window object
 navigator.mediaDevices.getUserMedia(constraints).then((stream)=>{
     video.srcObject=stream;
 })
+
